@@ -1,0 +1,32 @@
+{
+  "name": "snow-flake",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lerna run dev --parallel",
+    "server:dev": "cd packages/server && npm run start",
+    "client:dev": "cd packages/client && npm run start",
+    "server:build": "cd packages/server && npm run build",
+    "bootstrap": "lerna bootstrap",
+    "postinstall": "npm run bootstrap && npm run server:build"
+  },
+  "author": "daun",
+  "license": "ISC",
+  "engines": {
+    "node": "12.14.1",
+    "npm": "6.13.4"
+  },
+  "devDependencies": {
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-react": "^7.20.0",
+    "lerna": "^3.21.0"
+  },
+  "dependencies": {
+    "@lerna/run": "^3.21.0",
+    "box2d": "^1.0.0",
+    "phaser3-rex-plugins": "^1.1.18"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)."
+}
