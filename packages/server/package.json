@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon --exec babel-node src/index.js",
     "debug": "babe-node debug src/index.js",
-    "build": "babel src -d build"
+    "build": "npx babel src -d build"
   },
   "author": "",
   "license": "ISC",
