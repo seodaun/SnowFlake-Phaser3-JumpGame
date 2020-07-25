@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "parcel build index.html --no-source-maps",
-    "dev": "set PORT=8080 && parcel index.html"
+    "dev": "parcel index.html"
   },
   "author": "",
   "license": "ISC",
